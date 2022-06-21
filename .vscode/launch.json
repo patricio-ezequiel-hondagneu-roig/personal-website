@@ -4,11 +4,11 @@
 	"configurations": [
 		{
 			"name": "Run in Edge",
-			"type": "msedge",
+			"type": "pwa-msedge",
 			"request": "launch",
 			"preLaunchTask": "npm: start",
-			"url": "http://localhost:4200/",
-			"cleanUp": "wholeBrowser"
+			"url": "http://localhost:4200",
+            "webRoot": "${workspaceFolder}"
 		}
 	]
 }
