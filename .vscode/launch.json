@@ -6,17 +6,19 @@
 			"name": "Run in Edge",
 			"type": "pwa-msedge",
 			"request": "launch",
-			"preLaunchTask": "npm: start",
+			"preLaunchTask": "Serve personal-website",
+			"postDebugTask": "Terminate task",
 			"url": "http://localhost:4200",
-            "webRoot": "${workspaceFolder}"
+			"webRoot": "${workspaceFolder}"
 		},
 		{
 			"name": "Run in Chrome",
 			"type": "pwa-chrome",
 			"request": "launch",
-			"preLaunchTask": "npm: start",
+			"preLaunchTask": "Serve personal-website",
+			"postDebugTask": "Terminate task",
 			"url": "http://localhost:4200",
-            "webRoot": "${workspaceFolder}"
+			"webRoot": "${workspaceFolder}"
 		}
 	]
 }

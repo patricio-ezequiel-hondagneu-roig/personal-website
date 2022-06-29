@@ -5,6 +5,7 @@
 		{
 			"type": "npm",
 			"script": "start",
+			"label": "Serve personal-website",
 			"isBackground": true,
 			"problemMatcher": {
 				"owner": "typescript",
@@ -19,6 +20,13 @@
 					}
 				}
 			}
+		},
+		{
+			"type": "process",
+			"label": "Terminate task",
+			"command": [
+				"${command:workbench.action.tasks.terminate}"
+			]
 		}
 	]
 }
